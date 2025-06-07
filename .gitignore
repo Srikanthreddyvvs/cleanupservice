@@ -1,0 +1,34 @@
+# Maven target folder
+/target/
+
+# Ignore jar files - don't commit built jars
+*.jar
+
+# Maven Wrapper - keep these
+!.mvn/wrapper/maven-wrapper.jar
+
+# Ignore IDE and editor files
+.idea/
+*.iws
+*.iml
+*.ipr
+
+.vscode/
+
+# Eclipse/STS stuff
+.classpath
+.project
+.settings/
+.springBeans
+.sts4-cache/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Logs, temp files
+*.log
+*.tmp
