@@ -13,13 +13,19 @@ import java.util.Properties;
 public class CleanupApp implements CommandLineRunner {
 	@Autowired
 	private CleanupService cleanupService;
+	public static String userEmail;
 
 	public static void main(String[] args) {
+		if(args.length==0){
+			System.err.println("Please provide user email as argument");
+			System.exit(1);
+		}
+		userEmail=args[0];
 		SpringApplication.run(CleanupApp.class, args);
 	}
 
 	@Override
 	public void run(String... args) throws Exception {
-		cleanupService.startCleanup();
+		cleanupService.startCleanup(userEmail);
 	}
 }

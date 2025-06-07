@@ -15,9 +15,9 @@ public class CleanupService {
     @Autowired
     private MailService mailService;
 
-    public void startCleanup() {
+    public void startCleanup(String userEmail) {
         List<File> scrapFiles = fileScanner.getScrapFiles();
         int movedCount = fileMover.moveFiles(scrapFiles);
-        mailService.sendCompletionMail(movedCount);
+        mailService.sendCompletionMail(movedCount,userEmail);
     }
 }

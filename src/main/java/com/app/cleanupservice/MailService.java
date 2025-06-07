@@ -14,7 +14,7 @@ public class MailService {
     @Value("${user.email}")
     private String userEmail;
 
-    public void sendCompletionMail(int count) {
+    public void sendCompletionMail(int count,String userEmail) {
         SimpleMailMessage message = new SimpleMailMessage();
         message.setTo(userEmail);
         message.setSubject("Cleanup Completed");
