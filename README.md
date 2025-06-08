@@ -1,6 +1,6 @@
 # 🧹 Cleanup Service
 
-This is a Java-based cleanup utility that finds and moves unwanted scrap files and sends you a funny mail update once done! 😂
+This is a Java-based cleanup utility that finds and moves unwanted scrap files and sends you a mail update.
 
 ## 📦 How to Use
 
