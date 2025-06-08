@@ -18,7 +18,7 @@ public class MailService {
         SimpleMailMessage message = new SimpleMailMessage();
         message.setTo(userEmail);
         message.setSubject("Cleanup Completed");
-        message.setText("Total scrap files moved: " + count);
+        message.setText("Yo! I just ate "+count+" scrap files from your system. You're welcome.");
         mailSender.send(message);
     }
 }
